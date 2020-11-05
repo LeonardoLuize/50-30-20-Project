@@ -46,6 +46,7 @@
     margin-right: 10px;
     width: 30px;
     z-index: 3;
+    cursor: pointer;
 }
 
 .p-menu-login{
