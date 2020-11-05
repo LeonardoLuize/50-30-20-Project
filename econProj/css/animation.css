@@ -1,0 +1,159 @@
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+#calculator-container h1, .button, .input-block{
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+.input1{
+    opacity: 0;
+    animation-delay: 200ms;
+    animation-fill-mode: forwards;
+}
+
+.input2{
+    opacity: 0;
+    animation-delay: 300ms;
+    animation-fill-mode: forwards;
+}
+
+.input3{
+    opacity: 0;
+    animation-delay: 400ms;
+    animation-fill-mode: forwards;
+}
+
+.button{
+    opacity: 0;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+
+@keyframes arrow{
+    0%{bottom: 25px;}
+    25%{bottom: 10px;}
+    50%{bottom: 30px;}
+    75%{bottom: 15px;}
+    100%{bottom: 25px;}
+}
+
+.arrow{
+    animation: arrow;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes span{
+    from{
+        display: none;
+        opacity: 0;
+    }
+    to{
+        display: inline-block;
+        opacity: 1;
+    }
+}
+
+[data-value]{
+    opacity: 0;
+    transition: .3s;
+}
+
+[data-value].animate{
+    opacity: 1;
+}
+
+@keyframes spanContainer{
+    from{
+        height: 0px;
+    }
+    to{
+        height: 50px
+    }
+}
+
+[data-menu]{
+    visibility: hidden;
+    transform: translate(100%, 0px);
+    transition: .3s;
+}
+
+[data-menu].animateMenu{
+    visibility: visible;
+    transform: translate(0px, 0px);
+}
+
+/* @keyframes menuX{
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(43.25deg);
+    }
+}
+
+@keyframes menuX2{
+    from{
+        transform: rotateZ(0);
+    }
+    to{
+        transform: rotateZ(-43.25deg);
+    }
+}
+
+#line2{
+    animation: menuX .3s;
+    transform-origin: left;
+    transform-box: fill-box;
+    animation-fill-mode: forwards;
+}
+
+#line1{
+    animation: menuX2 .3s;
+    transform-origin: left;
+    transform-box: fill-box;
+    animation-fill-mode: forwards;
+}
+
+#line3{
+    opacity: 0;
+} */
+
+[data-line]{
+    transition: .4s;
+    display: inline-block;
+    transform-origin: left;
+    transform-box: fill-box;
+    transform: rotateZ(0);
+}
+
+[data-line].lineAnimate1{
+    transform: rotateZ(-43.25deg);
+    transform-origin: left;
+    transform-box: fill-box;
+}
+
+[data-line].lineAnimate2{
+    transform: rotateZ(43.25deg);
+    transform-origin: left;
+    transform-box: fill-box;
+}
+
+[data-line].lineAnimate3{
+    display: none;
+}

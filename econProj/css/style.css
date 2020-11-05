@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.snapClass{
+    scroll-snap-align: start;
+}
+
+#calculator-container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #1CFEBA 0%, #1FB487 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+
+    
+}
+
+#menuInterface{
+    width: 80%;
+    height: 100vh;
+    background: #FFFAFB;
+    position: fixed;
+    right: 0px;
+    z-index: 2;
+}
+
+.menu{
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    margin-right: 10px;
+    width: 30px;
+    z-index: 3;
+}
+
+#calculator-container h1{
+    font-size: clamp(3.5rem, 15vw, 200px);
+    color: #2F323A;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+label {
+    color: #2F323A;
+    font-style: italic;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.input-block input{
+    height: 30px;
+    width: 160px;
+    padding: 0 1.6rem;
+    border-radius: 20px;
+    background: #1ABC8B;
+    border: 1px solid #2F323A;
+    color: #2F323A;
+    font-size: 23px;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+}
+
+
+input:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+} 
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+span{
+    display: block;
+}
+
+#span-container{
+    height: 0px;
+}
+
+
+
+.button {
+    font-size: clamp(16px, 4vw, 30px);
+    font-weight: 700;
+    font-style: italic;
+    padding: 15px 20px;
+    color: #FFFAFB;
+    text-decoration: none;
+    background: #1CFEBA;
+    border-radius: 35px;
+    transition-property: background-color, color;
+    transition-duration: .5s;
+    margin-top: 50px;
+}
+
+.button:hover {
+    background-color: #FFFAFB;
+    color: #1CFEBA;
+}
+
+.value{
+    color: #2F323A;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+.arrow{
+    position: absolute;
+    bottom: 25px;
+    cursor: pointer;
+    width: 30px;
+}
+
+#content-container{
+    background: linear-gradient(180deg, #1FB487 0%, #1CFEBA 100%);
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding-bottom: 50px;
+
+    
+}
+
+h2{
+    font-style: italic;
+    font-weight: 700;
+    font-size: clamp(27px, 6vw, 40px);
+    margin-top: 1in;
+}
+
+.p-subtitle{
+    font-style: italic;
+    font-size: clamp(20px, 4vw, 25px);
+    margin-top: 50px;
+}
+
+.p1{
+    font-size: clamp(20px, 3vw, 20px);
+    margin-top: 25px;
+    line-height: 1.5;
+}
+
+.text-container{
+    width: 85%;
+}
+
+@media (min-width: 425px){
+    label {
+        font-size: 20px;
+    }
+    
+    .input-block input{
+        width: 200px;
+    }
+
+    #menuInterface{
+        width: 70%;
+    }
+}
+
+@media (min-width: 760px){
+    
+    .input-block input{
+        width: 300px;
+    }
+
+    #menuInterface{
+        width: 53%;
+    }
+}
+
+@media (min-width: 1024px){
+
+    .input-block input{
+        width: 300px;
+        height: 40px;
+    }
+
+    .text-container {
+        width: 60%;
+    }
+
+    #menuInterface{
+        width: 30%;
+    }
+}
+

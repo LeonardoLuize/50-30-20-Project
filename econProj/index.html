@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+</head>
+<body>
+    <div id="container">
+
+        <div id="calculator-container" class="snapClass">
+
+            <div class="menu" onclick="menu()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="menu 1">
+                    <path id="line3" data-line="3" d="M3 12H21" stroke="#2F323A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path id="line2" data-line="2" d="M3 6H21" stroke="#2F323A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path id="line1" data-line="1" d="M3 18H21" stroke="#2F323A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+            </div>
+
+            <div id="menuInterface" data-menu="">
+                
+            </div>
+            
+            <h1>50 30 20</h1>
+
+            <div class="input-block input1">
+                <label for="number">Valor</label>
+                <input id="inputValue" required type="number">
+            </div>
+            <div id="span-container">
+                <span id="value1" data-value="" class="value"></span>
+                <span id="value2" data-value="" class="value"></span>
+                <span id="value3" data-value="" class="value"></span>
+            </div>
+
+            <a href="#" onclick="calculate()" class="button">Calcular</a>
+            <img onclick="arrowClick()" class="arrow" src="./svg/arrow.svg" alt="more-information">
+            
+        </div>
+
+        <div id="content-container" class="snapClass">
+            <h2>Regra 50 / 30 / 20</h2>
+            <div class="text-container">
+                <p class="p1">
+                    Uma regra eficiente e simples que te ajuda a colocar as suas contas em ordem e a começar a guardar dinheiro.
+                </p>
+                    
+            </div>
+
+            <div class="text-container">
+                <p class="p-subtitle">O que é?</p>
+                <p class="p1">
+                    A regra 50/30/20 é uma regra para orientar o orçamento 
+                    das pessoas. Segui-la significa estabelecer um limite de 
+                    gastos mensais para três principais áreas. Sendo cerca 
+                    de 50% da sua renda para bancar seus "gastos fixos e essenciais".
+                    30% para suas despesas variáveis com "estilo de vida". Por fim, 20%
+                    da renda deve ser destinada a "prioridades financeiras".
+                </p>
+
+                <p class="p1">
+                    O grande trabalho é definir que gastos serão considerados em cada um desses grupos. 
+                    Alguns exemplos a seguir.
+                </p>
+            </div>
+
+            <div class="text-container">
+                <p class="p-subtitle">50% - gastos fixos e essenciais</p>
+                <p class="p1">
+                    São os gastos necessários para manter a rotina funcionando. 
+                    Como, despesas com moradia, contas de consumo(água, luz, internet), 
+                    alimentação, transporte e saúde.
+                </p>
+            </div>
+
+            <div class="text-container">
+                <p class="p-subtitle">30% - gastos variáveis</p>
+                <p class="p1">
+                    Esse grupo reúne as despesas pessoais e 
+                    voluntárias de cada um, como uma viagem ao 
+                    exterior nas férias, idas ao cinema e a restaurantes.
+                </p>
+            </div>
+
+            <div class="text-container">
+                <p class="p-subtitle">20% - prioridades financeiras</p>
+                <p class="p1">
+                    Aqui entram os valores que as pessoas devem investir periodicamente 
+                    para assegurar um bom padrão de vida no futuro. São os recursos que você precisa poupar para 
+                    colocar projetos de pé e realizar seus sonhos.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
