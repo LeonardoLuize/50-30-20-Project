@@ -157,3 +157,11 @@
 [data-line].lineAnimate3{
     display: none;
 }
+
+[data-log]{
+    display: inline-block;
+}
+
+[data-log].animateLog{
+    display: none;
+}
