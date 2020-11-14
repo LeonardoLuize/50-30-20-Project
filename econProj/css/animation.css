@@ -140,28 +140,60 @@
     transform-origin: left;
     transform-box: fill-box;
     transform: rotateZ(0);
+    stroke: #2F323A;
 }
 
 [data-line].lineAnimate1{
     transform: rotateZ(-43.25deg);
     transform-origin: left;
     transform-box: fill-box;
+    stroke: #FFFAFB;
 }
 
 [data-line].lineAnimate2{
     transform: rotateZ(43.25deg);
     transform-origin: left;
     transform-box: fill-box;
+    stroke: #FFFAFB;
 }
 
 [data-line].lineAnimate3{
     display: none;
+    stroke: #FFFAFB;
 }
 
 [data-log]{
-    display: inline-block;
+    display: block;
 }
 
 [data-log].animateLog{
     display: none;
+}
+
+[data-label]{
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    transition: .3s;
+}
+
+[data-label].animateLabel{
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+}
+
+@media (min-width: 1024px){
+    [data-label]{
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        transition: .3s;
+    }
+    
+    [data-label].animateLabel{
+        position: absolute;
+        bottom: 45px;
+        left: 5px;
+    }
 }

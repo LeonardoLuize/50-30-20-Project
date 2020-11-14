@@ -68,11 +68,11 @@ firebase.auth().onAuthStateChanged(user => {
 
         img.src = user.photoURL;
         img.style.display = "inline-block"
-        img.style.width = "55px";
-        img.style.height = "55px";
+        img.style.width = "43px";
+        img.style.height = "43px";
         img.style.borderRadius = "50%";
         img.style.marginTop = "70px"
-        img.style.marginLeft = "35px"
+        img.style.marginLeft = "5px"
         img.style.marginRight = "10px"
         img.style.transform = "translateY(25%)"
 

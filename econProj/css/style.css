@@ -33,10 +33,16 @@
 #menuInterface{
     width: 80%;
     height: 100vh;
-    background: #FFFAFB;
+    background: #33363E;
     position: fixed;
     right: 0px;
     z-index: 2;
+}
+
+.menuBox{
+    height: 100vh;
+    width: 95%;
+    margin: auto;
 }
 
 .menu{
@@ -63,15 +69,31 @@
     font-size: clamp(20px, 5vw, 27px);
     color: #1CFEBA;
     font-style: italic;
-    margin-top: 70px;
-    margin-left: 45px;
+    margin-left: 10px;
     display: inline-block;
-    border: 4px solid #1CFEBA;
+    border: 2px solid #1CFEBA;
     padding: 7px 10px;
     border-radius: 10px;
     transition-property: background-color, color;
     transition-duration: .3s;
     cursor: pointer;
+    bottom: 10px;
+    position: absolute;
+}
+
+.p-menu-logOut{
+    font-size: clamp(20px, 5vw, 27px);
+    color: #1CFEBA;
+    font-style: italic;
+    margin-left: 10px;
+    border: 2px solid #1CFEBA;
+    padding: 7px 10px;
+    border-radius: 10px;
+    transition-property: background-color, color;
+    transition-duration: .3s;
+    cursor: pointer;
+    bottom: 10px;
+    position: absolute;
 }
 
 .p-menu-login:hover{
@@ -84,7 +106,7 @@
     color: #1CFEBA;
     font-style: italic;
     margin-top: 45px;
-    margin-left: 45px;
+    margin-left: 10px;
     text-decoration: none;
 }
 
@@ -103,11 +125,18 @@
     margin-bottom: 50px;
 }
 
+.input-block{
+    position: relative;
+}
+
 label {
     color: #2F323A;
     font-style: italic;
     font-weight: 600;
-    margin-right: 5px;
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    pointer-events: none;
 }
 
 .input-block input{
@@ -123,6 +152,8 @@ label {
     font-style: italic;
     text-align: center;
 }
+
+
 
 
 input:focus, input:focus, select:focus {

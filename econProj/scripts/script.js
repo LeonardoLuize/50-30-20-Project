@@ -99,7 +99,11 @@ function menu(){
 }
 
 
-
-
+function labelAnimate(){
+    
+        document.querySelectorAll('[data-label]').forEach(e =>{
+            e.classList.add('animateLabel')
+        })
+}
 
 

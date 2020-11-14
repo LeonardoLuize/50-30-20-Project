@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animation.css">
 </head>
@@ -24,18 +26,22 @@
             </div>
 
             <div id="menuInterface" data-menu="">
-                <p id="pImage"><img id="imgUser" src="" alt=""></p>
-                <p id="pUser"></p>
-                <p id="pLogIn" data-log="logIn" onclick="logInWithGoogle()" class="p-menu-login">Login</p>
-                <p id="pLogOut" data-log="logOut" onclick="logOut()" class="p-menu-login">Log Out</p>
-                <p class="p-menu"><img class="icon" src="./svg/wallet2.svg" alt="wallet icon"><a href="#">Carteira</a></p>
+                <div class="menuBox">
+                    <p id="pImage"><img id="imgUser" src="" alt=""></p>
+                    <p id="pUser"></p>
+                    <p id="pLogIn" data-log="logIn" onclick="logInWithGoogle()" class="p-menu-login">Login</p>
+                    <p id="pLogOut" data-log="logOut" onclick="logOut()" class="p-menu-logOut">Log Out</p>
+                    <p class="p-menu"><img class="icon" src="./svg/wallet2.svg" alt="wallet icon"><a href="#">Carteira</a></p>
+                </div>
             </div>
             
             <h1>50 30 20</h1>
 
             <div class="input-block input1">
-                <label for="number">Valor</label>
-                <input id="inputValue" required type="number">
+                <input onfocus="labelAnimate()" autocomplete="off" id="inputValue" required type="number">
+                <label id="label1" data-label="" for="number">
+                    <span class="content-value">Valor</span>    
+                </label> 
             </div>
             <div id="span-container">
                 <span id="value1" data-value="" class="value"></span>
