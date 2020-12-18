@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economize | Carteira</title>
+    <link rel="stylesheet" href="./css/styleCarteira.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+</head>
+<body>
+    <div id="container">
+
+        <div id="calculator-container" class="snapClass">
+
+            <div class="menu" onclick="menu()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="menu 1">
+                    <path id="line3" data-line="3" d="M3 12H21" stroke="#2F323A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path id="line2" data-line="2" d="M3 6H21" stroke="#2F323A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path id="line1" data-line="1" d="M3 18H21" stroke="#2F323A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+            </div>
+
+            <div id="menuInterface" data-menu="">
+                <div class="menuBox">
+                    <p id="pImage"><img id="imgUser" src="" alt=""></p>
+                    <p id="pUser"></p>
+                    <p id="pLogIn" data-log="logIn" onclick="logInWithGoogle()" class="p-menu-login">Login</p>
+                    <p id="pLogOut" data-log="logOut" onclick="logOut()" class="p-menu-logOut">Log Out</p>
+                    <p class="p-menu"><img class="icon" src="./svg/home.svg" alt="home icon"><a href="index.html">Home</a></p>
+                </div>
+            </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/scriptFirebase.js"></script>
+</body>
+</html>
