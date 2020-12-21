@@ -33,7 +33,8 @@
 #menuInterface{
     width: 80%;
     height: 100vh;
-    background: #33363E;
+    background: rgba(47, 50, 58, 0.76);
+    backdrop-filter: blur(20px);
     position: fixed;
     right: 0px;
     z-index: 2;
