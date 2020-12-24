@@ -1,3 +1,8 @@
-<svg width="28" height="26" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14 0.59375L13.2812 1.28125L0.28125 14.2812L1.71875 15.7188L3 14.4375V26H12V16H16V26H25V14.4375L26.2812 15.7188L27.7188 14.2812L14.7188 1.28125L14 0.59375ZM14 3.4375L23 12.4375V24H18V14H10V24H5V12.4375L14 3.4375Z" fill="#1CFEBA"/>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="home-alt">
+<g id="Icon/home">
+<path id="Path 6" d="M3 22.1818V10.1818L12 2L21 10.1818V22.1818H3Z" stroke="#1CFCB9"/>
+</g>
+<rect id="Rectangle" x="9" y="14" width="6" height="8" rx="1" stroke="#1CFCB9"/>
+</g>
 </svg>

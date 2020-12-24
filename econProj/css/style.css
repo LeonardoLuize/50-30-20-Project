@@ -71,6 +71,7 @@
     color: #1CFEBA;
     font-style: italic;
     margin-left: 10px;
+    margin-bottom: 20px;
     display: inline-block;
     border: 2px solid #1CFEBA;
     padding: 7px 10px;
@@ -80,6 +81,7 @@
     cursor: pointer;
     bottom: 10px;
     position: absolute;
+    
 }
 
 .p-menu-logOut{
@@ -87,6 +89,7 @@
     color: #1CFEBA;
     font-style: italic;
     margin-left: 10px;
+    margin-bottom: 20px;
     border: 2px solid #1CFEBA;
     padding: 7px 10px;
     border-radius: 10px;
@@ -95,6 +98,7 @@
     cursor: pointer;
     bottom: 10px;
     position: absolute;
+    
 }
 
 .p-menu-login:hover{
@@ -292,5 +296,7 @@ h2{
     #menuInterface{
         width: 30%;
     }
+
+    
 }
 
