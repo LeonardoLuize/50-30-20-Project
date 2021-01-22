@@ -30,6 +30,14 @@
     
 }
 
+#box{
+    width: 40%;
+    background-color: rgb(224, 224, 224);
+    height: 90px;
+    position: absolute;
+    bottom: 0px;
+}
+
 #menuInterface{
     width: 80%;
     height: 100vh;
